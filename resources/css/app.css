@@ -1,0 +1,120 @@
+/* Thiết lập chung và font */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* KHU VỰC HEADER */
+header {
+    background-color: #AA0000; /* Màu đỏ ấm cho ẩm thực */
+    color: white;
+    padding: 15px 50px;
+    display: flex; /* Kích hoạt Flexbox */
+    justify-content: space-between; /* Đẩy Logo và Menu ra hai bên */
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Menu nằm ngang */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #880000;
+}
+
+/* KHU VỰC HERO BANNER */
+.hero {
+    background: url('food-banner.jpg') no-repeat center center/cover; /* Thay bằng ảnh của bạn */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+/* KHU VỰC CONTAINER (MAIN + ASIDE) */
+.container {
+    width: 90%;
+    margin: 30px auto;
+    display: flex; /* Kích hoạt Flexbox cho layout 2 cột */
+    gap: 30px; /* Khoảng cách giữa 2 cột */
+}
+
+main {
+    flex: 3; /* Cột chính chiếm 3 phần */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    flex: 1; /* Cột bên chiếm 1 phần */
+    background-color: #ffe7d3; /* Màu nền nhẹ cho sidebar */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Thiết lập các thẻ bài viết */
+.food-card {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #AA0000;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Thiết lập Sidebar */
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+    display: block;
+}
+
+/* KHU VỰC FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
